@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <script src="script.js"></script>
+</body>
+
+  <!-- Background layers -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Side navigation dots -->
+  <nav class="dots">
+    <a href="#section_custom_1" class="active" data-dot></a>
+    <a href="#section_custom_2" data-dot></a>
+    <a href="#section_custom_3" data-dot></a>
+    <a href="#section_custom_4" data-dot></a>
+    <a href="#section_custom_5" data-dot></a>
+  </nav>
+
+  <main>
+
+    <!-- Section 1 (MainPage / Home) -->
+    <section id="section_custom_1">
+      <p class="eyebrow reveal">Portfolio</p>
+      <h1 class="reveal">Liam D. Boyle<br>SWE</h1>
+      <p class="lead reveal">
+        I build things... 
+        this page is one of them. Scroll down,
+        or click the dots on the right, to see how it's put together.
+      </p>
+    </section>
+
+    <!-- Section 2 (About) -->
+    <section id="section_custom_2">
+      <p class="eyebrow reveal">About</p>
+      <h2 class="reveal">A little about me.</h2>
+      <p class="lead reveal">
+        Replace this paragraph with two or three sentences about your
+        background, what you're studying or working on, and what kind
+        of problems you like solving. Keep it human, not a resume bullet.
+      </p>
+      <div class="tag-row">
+        <span class="tag reveal">Python</span>
+        <span class="tag reveal">React</span>
+        <span class="tag reveal">FastAPI</span>
+        <span class="tag reveal">SQL</span>
+      </div>
+    </section>
+
+    <!-- Section 3 (Projects) -->
+    <section id="section_custom_3">
+      <p class="eyebrow reveal">Projects</p>
+      <h2 class="reveal">A page dedicated to my more noteworthy projects.</h2>
+      <div class="project-grid">
+        <div class="project-card reveal">
+          <h3>Project One</h3>
+          <p>One or two sentences on what it does and what you used to build it.</p>
+        </div>
+        <div class="project-card reveal">
+          <h3>Project Two</h3>
+          <p>Same idea — keep it short, link out to a repo or live demo if you have one.</p>
+        </div>
+        <div class="project-card reveal">
+          <h3>Project Three</h3>
+          <p>A third project card. Add more by copy-pasting this block.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 (Skills) -->
+    <section id="section_custom_4">
+      <p class="eyebrow reveal">Skills</p>
+      <h2 class="reveal">Ways I solve problems.</h2>
+      <p class="lead reveal">
+        Languages, frameworks, tools — whatever's relevant. This section
+        can reuse the same tag-row style from the About section, or
+        become its own grid of small cards.
+      </p>
+      <div class="tag-row">
+        <span class="tag reveal">TypeScript</span>
+        <span class="tag reveal">PyTorch</span>
+        <span class="tag reveal">Docker</span>
+        <span class="tag reveal">PostgreSQL</span>
+        <span class="tag reveal">AWS</span>
+      </div>
+    </section>
+
+    <!-- Section 5 (Contact) -->
+    <section id="section_custom_5">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="reveal">Let's talk!</h2>
+      <p class="lead reveal">
+        Open to opportunities and always happy to chat about a project.
+        Best way to reach me is below.
+      </p>
+      <a href="mailto:LiamDBoyle22@outlook.com" class="contact-link reveal">LiamDBoyle22@outlook.com →</a>
+    </section>
+
+  </main>
+
+  <footer>Built by Liam D. Boyle. 8/22/2026</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
