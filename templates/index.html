@@ -185,5 +185,18 @@
   <script src="static/js/script.js"></script>
   <script src="static/js/certcar.js"></script>
 
+  <script>
+    const header = document.querySelector('header');
+    const THRESHOLD = 60;
+    let lastY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      const scrollingDown = y > lastY;
+      header.classList.toggle('hidden', scrollingDown && y > THRESHOLD);
+      lastY = y;
+    }, { passive: true });
+  </script>
+
 </body>
 </html>

@@ -1,7 +1,6 @@
 :root {
     --bg: #0a0e14; 
     --bg-2: #10151d;
-    --bg-3: #223547a9;
     --text: #e7eaee;
     --text-dim: #8b93a1;
     --accent: #4ce0d2;
@@ -388,9 +387,16 @@ p.lead {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10vw;
-    background: rgba(20, 31, 46, 0.126);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /*background: rgba(20, 31, 46, 0);
     backdrop-filter: blur(10px);
     /*border-bottom: 1px solid var(--line);*/
+}
+
+header.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none; /* so invisible links can't be clicked */
 }
 
 .site-header .logo {
