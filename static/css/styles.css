@@ -442,3 +442,26 @@ footer {
     .dots {display: none; }
     section {padding: 6vh 6vw; }
 }
+
+/* ---------- Mini games page ---------- */
+.games-page {
+    padding: 4vh 10vw;
+}
+
+.game {
+    margin-top: 2rem;
+}
+
+#snake-score {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    margin: 1rem 0 0.5rem;
+}
+
+#snake-board {
+    display: block;
+    max-width: 100%;   /* shrink on small screens */
+    height: auto;      /* ...and keep it square */
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}

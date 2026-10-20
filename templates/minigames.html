@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Games — Liam D. Boyle</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+  <!-- PyScript: lets the browser run Python -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pyscript/core@0.7.31/dist/core.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@pyscript/core@0.7.31/dist/core.js"></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="/" class="logo">Liam D. Boyle</a>
+    <nav class="site-nav">
+      <a href="/minigames">Mini Games</a>
+    </nav>
+  </header>
+
+  <main class="games-page">
+    <h1>Mini Games</h1>
+
+    <div class="game">
+      <h2>Snake</h2>
+      <p id="snake-score">Score: 0</p>
+      <canvas id="snake-board" width="400" height="400"></canvas>
+    </div>
+  </main>
+
+  <!-- Runs our Python file in the browser -->
+  <script type="mpy" src="{{ url_for('static', filename='games/snake.py') }}"></script>
+
+</body>
+</html>
